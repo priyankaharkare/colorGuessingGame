@@ -57,11 +57,13 @@ resetButton.addEventListener("click" , function() {
 	pickedColor = pickColor()
 	// change colorDisplay to match picked color
 	colorDisplay.textContent = pickedColor
+	this.textContent = "New Colors"
+
 	// change colors of squares
 	for (let i = 0 ; i < squares.length; i++){
 	squares[i].style.backgroundColor = colors[i]
 	// the color of the stripe should go back to the original color
-	h1.style.backgroundColor = "#232323"
+	h1.style.backgroundColor = "steelblue"
 	messageDisplay.textContent = ""
 
 	}
